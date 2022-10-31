@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 </title>
+    <script type="text/javascript">
+
+       var _age = prompt("Enter your Age: ")
+
+       if ( _age == null){ // If user clicks the Cancel button
+        alert("Not sharing your age with me");
+        }
+
+        if (_age < 18) {
+            alert("Too Young To Vote"  + " \n" + "Good-Bye");
+
+            document.write('Sorry Wait until you 18')
+        } else {
+            alert("You Can Vote")
+            var first_name= prompt("Enter First Name: ");
+            var last_name=  prompt("Enter Last Name: ");
+    
+            var _useraddress = prompt("Enter your current Address: ");
+            var _phonenum = prompt("Enter your Phone Number: ");
+
+    
+
+        alert("First Name:  " + first_name +  "\n" + 
+        "Last Name: " + last_name +"\n"+ 
+        "Address: " + _useraddress +"\n" +
+        "Phone Number: "  + _phonenum + "\n" +
+         "Age: " + _age );
+      
+        document.write("First Name:  " + first_name +  "<p>" + "Last Name: " + last_name +"<p>"+ "Address: " + _useraddress +"<p>" + "Phone Number: "  + _phonenum + "<p>" + "Age: "+ _age + "<p>");
+            // <!-- How to display " CANT VOTE GIF"  WHEN AGE IS UNDER 18? -->
+           document.write('<img src="https://media.giphy.com/media/zs2GS9WrPK7u95yjOq/giphy.gif" alt="Vote GIF"> ');
+
+        }
+
+        
+     
+    </script>
+
+
+</head>
+<body bgcolor="Lightblue">
+
+</body>
+</html>
